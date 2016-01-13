@@ -1,0 +1,17 @@
+﻿<Page
+    x:Class="PowerBall.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:PowerBall"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid x:Name="Grid1" Padding="10 10 10 10" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel VerticalAlignment="Center">
+            <TextBox x:Name="InputTextBox" HorizontalAlignment="Stretch" PlaceholderText="RNG Seed Modifier"></TextBox>
+            <Button x:Name="RandomizeButton" Click="RandomizeButton_Click" Height="48" HorizontalAlignment="Stretch">Select Random Numbers</Button>
+            <TextBox x:Name="ResultsTextBox" HorizontalAlignment="Stretch" IsReadOnly="True" BorderThickness="0" FontSize="42" FontFamily="Consolas"></TextBox>
+        </StackPanel>
+    </Grid>
+</Page>
